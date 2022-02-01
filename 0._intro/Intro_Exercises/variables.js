@@ -48,3 +48,6 @@ for (var i = 0; i < 5; i++) {
         console.log(i);
     }, 1000);
 }
+
+// ikke brug var for den vil printe 10 ud 10 gange. It redefines the value and leaks out.
+// scoping issues. Increments happen before the for loop.
