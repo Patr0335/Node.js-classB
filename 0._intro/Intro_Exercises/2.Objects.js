@@ -9,8 +9,11 @@ const alienMessage = {
 
 console.log(alienMessage.message);
 
-let key = 'message';
-console.log(alienMessage[key])  // Which one is correct ?
+
+let recievedmessage = alienMessage.message
+console.log(recievedmessage)
+
+
 
 // Log the message 
 
@@ -32,11 +35,12 @@ MyObject.Secret = 'I like turtles'
 
 console.log(MyObject.Secret)
 
+
+// make a rule called isAllowed and let the value be true
+
 const stackOverflow = {
 	isAllowed: 'true'
 };
-
-// make a rule called isAllowed and let the value be true
 
 // --------------------------------------
 // Exercise 4 - Remove a property 
