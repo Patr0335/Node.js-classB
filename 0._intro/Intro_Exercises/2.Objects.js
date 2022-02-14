@@ -7,7 +7,7 @@ const alienMessage = {
 	message: "Hello, earthling! I bring peace."
 };
 
-console.log(alienMessage.message);
+console.log(alienMessage.message); // dot notation
 
 
 let recievedmessage = alienMessage.message

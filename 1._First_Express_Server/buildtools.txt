@@ -1,0 +1,7 @@
+Maven       npm = node package manager
+pom.xml     package.json
+
+Maven = buid steps JAR/artifact/compile - 
+pom.xml = meta-data - dependencies - build steps
+
+package.json - meta-data - dependencies - scripts
