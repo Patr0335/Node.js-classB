@@ -4,7 +4,9 @@
   "description": "SSR example in express",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-dev": "cross-env PORT=3000 nodemon app.js",
+    "start": "nodemon app.js"
   },
   "keywords": [
     "SSR",

@@ -1,10 +1,16 @@
 const express = require("express");
 const app = express();
 
+/*const {calculateAmountOfCoolDinosaurs }= require("./dinosaurs/dinosaurs.js")
+console.log(calculateAmountOfCoolDinosaurs());*/
+
+const dinosaurrouter = require("./routers/dinosaurrouter.js");
+app.use(dinosaurrouter.router);
+
 app.use(express.static("public"))
 
 app.get("/", (req, res) => {
-    res.sendFile(__dirname + "/public/frontpage/frontpage.html")
+    res.sendFile(__dirname + "/public/frontpage.html")
 });
 
 
@@ -20,6 +26,8 @@ app.get("/bored", (req, res) => {
 });
 
 
-app.listen(8080, () => { 
-    console.log("The server is running on port", 8080);
+
+const PORT = process.env.PORT || 9000;
+app.listen(PORT, () => { 
+    console.log("The server is running on port", PORT);
 });
