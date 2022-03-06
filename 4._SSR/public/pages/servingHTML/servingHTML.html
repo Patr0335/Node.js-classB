@@ -1,0 +1,107 @@
+<html lang="en">
+  <link
+    href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    rel="stylesheet"
+    id="bootstrap-css"
+  />
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <link
+    rel="stylesheet"
+    href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
+    media="screen"
+  />
+
+  <link
+    rel="stylesheet"
+    href="../../components/styles/servingHTML.css"
+    media="screen"
+  />
+  <script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+  <body class="html">
+    <header class="masthead">
+      <div class="container h-100">
+        <div class="row h-100 align-items-center">
+          <div class="col-12 text-align: left">
+            <h1 class="fw-light">Nodemon</h1>
+            <p class="lead">
+              Nodemon is a tool that helps develop node.js applications by
+              constantly refreshing/restarting your application when we change
+              the code and files. <br />
+              Requires a: npm install -g nodemon which will install it globally
+              to the system path. <br />
+              Can also be installed as a development dependency: <br />
+              npm install --save-dev nodemon <br />
+              The standard method was: <br />
+              Node app.js <br />
+              Where as Nodemon is: <br />
+              Nodemon app.js <br>
+              Picture example below.
+            </p>
+            <h1 class="fw-light">Fetch Request</h1>
+            <p class="lead">
+              - Can write a fetch request in the front-end by heart. <br>
+              
+              Simple setup for a fetch to get data from json file: <br>
+              Express serves app.js from my public folder which executes servingHTML.js. 
+              My Express route reads the template.json file located under the folder fetchExample.
+              The client does an Ajax request via fetch(), hits the /json route which then serves the json content to our browser. <br>
+              If you type in: http://localhost:9000/json you should be able to see the content of the file. 
+            </p>
+            <h1 class="fw-light">Clock Assignment</h1>
+            <p class="lead">
+              One of the assignments for how to server HTML was that we had to create a simple clock website and host it through Heruko. <br>
+              That website can be found on: https://opening-day.herokuapp.com/
+            </p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="container page-top">
+      <div class="row">
+        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+          <p class="pTag">Nodemon example in Terminal</p>
+          <a
+            href="../../components/images/nodemon1.png"
+            class="fancybox"
+            rel="ligthbox"
+          >
+            <img
+              src="../../components/images/nodemon1.png"
+              class="zoom img-fluid"
+              alt=""
+            />
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+          <p class="pTag">fetch method</p>
+          <a
+            href="../../components/images/fetch.png"
+            class="fancybox"
+            rel="ligthbox"
+          >
+            <img
+            src="../../components/images/fetch.png"
+              class="zoom img-fluid"
+              alt=""
+            />
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+          <p class="pTag"> Express route and request</p>
+          <a
+            href="../../components/images/fetch2.png"
+            class="fancybox"
+            rel="ligthbox"
+          >
+            <img
+              src="../../components/images/fetch2.png"
+              class="zoom img-fluid"
+              alt=""
+            />
+          </a>
+        </div>
+        <script src="./pages/servingHTML/servingHTML.js"></script>
+  </body>
+</html>
