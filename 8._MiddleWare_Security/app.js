@@ -42,6 +42,9 @@ app.get("/auth/login", (req, res) => {
     res.send({ message: "You are trying to login..."});
 });
 
+app.get("/clothes", (req, res) => {
+    res.sendFile(path.resolve("public/clothes.html"))
+})
 
 app.use(helmet());
 app.use(express.static("public")); // middleware
